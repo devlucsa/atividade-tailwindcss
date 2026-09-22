@@ -189,3 +189,20 @@ if (tipo === "cartao") {
         `;
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+
+    const html = document.documentElement;
+
+
+    html.classList.remove("dark");
+
+    html.setAttribute(
+        "data-theme",
+        "light"
+    );
+
+    atualizarIconeTema();
+
+    selecionarPagamento("cartao");
+
+});
