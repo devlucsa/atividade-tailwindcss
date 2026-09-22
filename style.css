@@ -27,3 +27,5 @@ body {font-family: inter;}
   font-size:10px;
   transition: transform.2s background .2s;
   }
+.theme-button:hover {transform: translateY(-1px); background: #e293b;} 
+.dark .theme-buttn {background: #1e293b; color: #cdb5e1;
