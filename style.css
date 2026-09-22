@@ -28,4 +28,15 @@ body {font-family: inter;}
   transition: transform.2s background .2s;
   }
 .theme-button:hover {transform: translateY(-1px); background: #e293b;} 
-.dark .theme-buttn {background: #1e293b; color: #cdb5e1;
+.dark .theme-buttn {background: #1e293b; color: #cdb5e1;}
+
+.title-ribbon {
+  margin-left: 12px;
+  background: #18a866;
+  color: white;
+  padding: 10px 42px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+}
