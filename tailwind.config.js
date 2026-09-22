@@ -86,7 +86,10 @@ function selecionarPagamento(tipo) {
         );
 
     });
-if (tipo === "cartao") {
+
+
+
+    if (tipo === "cartao") {
 
         cartao.classList.remove("hidden");
 
@@ -100,7 +103,7 @@ if (tipo === "cartao") {
             "dark:border-gray-300"
         );
 
-        total.textContent = "R$ 260,10";
+        total.textContent = "R$ 274,55";
 
         totalInfo.textContent =
             "em até 3x de R$ 86,70 sem juros";
@@ -189,6 +192,9 @@ if (tipo === "cartao") {
         `;
     }
 }
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const html = document.documentElement;
