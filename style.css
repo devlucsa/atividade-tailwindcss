@@ -85,3 +85,21 @@ body {font-family: inter;}
   font-size: 9px;
   transition: border .2s, color .2s, background .2s;
 }
+.payment-tab span { font-size: 15px; }
+.payment-tab:hover, .payment-tab.active { border-color: #64748b; color: #334155; background: #f8fafc; }
+.payment-tab b { position: absolute; right: 5px; top: -7px; border-radius: 4px; background: #10b981; padding: 2px 4px; color: white; font-size: 7px; }
+.dark .payment-tab { border-color: #334155; }
+.dark .payment-tab:hover, .dark .payment-tab.active { border-color: #94a3b8; color: white; background: #1e293b; }
+
+.product-icon { display: grid; height: 40px; width: 40px; place-items: center; border-radius: 6px; background: #f1f5f9; color: #64748b; font-size: 21px; }
+.dark .product-icon { background: #1e293b; }
+.apply-button { border-radius: 5px; background: #f8fafc; padding: 0 13px; color: #64748b; font-size: 10px; font-weight: 700; }
+.dark .apply-button { background: #1e293b; color: #cbd5e1; }
+.finish-button { width: 100%; border-radius: 6px; background: #0f172a; padding: 12px 8px; color: gray; font-size: 10px; font-weight: 700; transition: background .2s, transform .2s; }
+.finish-button:hover { transform: translateY(-1px); background: #FFFFFF; }
+.dark .finish-button { background: #FFFFFF ; }
+
+@media (max-width: 640px) {
+  .title-ribbon { padding: 7px 14px; font-size: 15px; }
+  .checkout-card { padding: 14px; }
+}
