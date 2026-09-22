@@ -17,6 +17,7 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body class="min-h-screen bg-[#f5f6f7] dark:bg-[#090a0c] text-[#111827] dark:text-white transition-colors duration-300">
 
     <div class="w-full flex justify-center px-3 py-3">
@@ -36,7 +37,22 @@
                     </span>
 
                 </div>
-  </header>
+
+
+                <button
+                    id="themeButton"
+                    onclick="alternarTema()"
+                    class="h-7 w-32 rounded-full border border-gray-200 dark:border-[#29292c] bg-gray-100 dark:bg-[#19191b] flex items-center justify-center gap-2 text-[9px] text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-[#252527] transition"
+                >
+
+
+                    <span id="themeText">
+                        Dark mode
+                    </span>
+
+                </button>
+
+            </header>
 
 
             <main class="grid grid-cols-1 lg:grid-cols-[1.55fr_0.95fr] gap-6 p-5">
@@ -59,7 +75,9 @@
                             </h2>
 
                         </div>
- <div class="rounded-lg border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-3.5">
+
+
+                        <div class="rounded-lg border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-3.5">
 
 
                             <label class="block text-[9px] font-semibold mb-1">
@@ -79,7 +97,9 @@
                                 >
 
                             </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
 
                                 <div>
 
@@ -93,7 +113,9 @@
                                     >
 
                                 </div>
-<div>
+
+
+                                <div>
 
                                     <label class="block text-[9px] font-semibold mb-1">
                                         CPF
@@ -105,7 +127,8 @@
                                     >
 
                                 </div>
- </div>
+
+                            </div>
 
 
 
@@ -119,7 +142,8 @@
                             >
 
                         </div>
- </div>
+
+                    </div>
 
 
 
@@ -136,7 +160,9 @@
                             </h2>
 
                         </div>
-<div class="rounded-lg border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-3.5">
+
+
+                        <div class="rounded-lg border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-3.5">
 
                             <div class="grid grid-cols-1 sm:grid-cols-[0.7fr_1.3fr] gap-3 mb-3">
 
@@ -152,7 +178,9 @@
                                     >
 
                                 </div>
-<div>
+
+
+                                <div>
 
                                     <label class="block text-[9px] font-semibold mb-1">
                                         Cidade / UF
@@ -166,7 +194,9 @@
                                 </div>
 
                             </div>
-<div class="grid grid-cols-1 sm:grid-cols-[1.5fr_0.5fr] gap-3">
+
+
+                            <div class="grid grid-cols-1 sm:grid-cols-[1.5fr_0.5fr] gap-3">
 
                                 <div>
 
@@ -180,7 +210,9 @@
                                     >
 
                                 </div>
- <div>
+
+
+                                <div>
 
                                     <label class="block text-[9px] font-semibold mb-1">
                                         Número
@@ -192,7 +224,8 @@
                                     >
 
                                 </div>
-</div>
+
+                            </div>
 
                         </div>
 
@@ -216,7 +249,10 @@
 
 
                         <div class="rounded-lg border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-3.5">
-<div class="grid grid-cols-3 gap-2 mb-3">
+
+
+
+                            <div class="grid grid-cols-3 gap-2 mb-3">
 
                                 <button
                                     id="btnCartao"
@@ -239,7 +275,8 @@
                                     onclick="selecionarPagamento('pix')"
                                     class="relative h-10 rounded-md border border-gray-200 dark:border-[#29292c] bg-gray-50 dark:bg-[#19191b] flex flex-col items-center justify-center gap-0.5 text-[9px] text-gray-500 dark:text-gray-400"
                                 >
- <span class="absolute -top-1.5 right-1 bg-emerald-500 text-white text-[7px] px-1.5 rounded-full">
+
+                                    <span class="absolute -top-1.5 right-1 bg-emerald-500 text-white text-[7px] px-1.5 rounded-full">
                                         -5% OFF
                                     </span>
 
@@ -266,7 +303,10 @@
                                 </button>
 
                             </div>
- <div id="cartaoContent">
+
+
+
+                            <div id="cartaoContent">
 
                                 <label class="block text-[9px] font-semibold mb-1">
                                     Número do Cartão
@@ -284,7 +324,9 @@
                                     </span>
 
                                 </div>
- <label class="block text-[9px] font-semibold mb-1">
+
+
+                                <label class="block text-[9px] font-semibold mb-1">
                                     Nome no Cartão
                                 </label>
 
@@ -292,7 +334,9 @@
                                     value="HILLARY SILVA"
                                     class="w-full h-8 px-2.5 mb-3 rounded-md border border-gray-300 dark:border-[#29292c] bg-white dark:bg-[#151517] text-[9px]"
                                 >
-  <div class="grid grid-cols-2 gap-3 mb-3">
+
+
+                                <div class="grid grid-cols-2 gap-3 mb-3">
 
                                     <div>
 
@@ -304,34 +348,8 @@
                                             value="08/29"
                                             class="w-full h-8 px-2.5 rounded-md border border-gray-300 dark:border-[#29292c] bg-white dark:bg-[#151517] text-[9px]"
                                         >
-<div id="cartaoContent">
 
-                                <label class="block text-[9px] font-semibold mb-1">
-                                    Número do Cartão
-                                </label>
-
-                                <div class="relative mb-3">
-
-                                    <input
-                                        value="4532 •••• •••• 8910"
-                                        class="w-full h-8 px-2.5 rounded-md border border-gray-300 dark:border-[#29292c] bg-white dark:bg-[#151517] text-[9px]"
-                                    >
-<span class="absolute right-2 top-1/2 -translate-y-1/2 text-[8px]">
-                                        
-                                    </span>
-
-                                </div>
-
-
-                                <label class="block text-[9px] font-semibold mb-1">
-                                    Nome no Cartão
-                                </label>
-
-                                <input
-                                    value="HILLARY SILVA"
-                                    class="w-full h-8 px-2.5 mb-3 rounded-md border border-gray-300 dark:border-[#29292c] bg-white dark:bg-[#151517] text-[9px]"
-                                >
-  </div>
+                                    </div>
 
 
                                     <div>
@@ -348,7 +366,9 @@
                                     </div>
 
                                 </div>
- <label class="block text-[9px] font-semibold mb-1">
+
+
+                                <label class="block text-[9px] font-semibold mb-1">
                                     Parcelamento
                                 </label>
 
@@ -369,7 +389,10 @@
                                 </select>
 
                             </div>
- <div id="pixContent" class="hidden text-center">
+
+
+
+                            <div id="pixContent" class="hidden text-center">
 
                                 <div class="w-32 h-32 mx-auto bg-white p-2 rounded-md grid grid-cols-7 gap-1 border border-gray-300">
 
@@ -430,7 +453,8 @@
                                     <span class="bg-black"></span>
 
                                 </div>
-<p class="text-[8px] text-gray-500 dark:text-gray-400 mt-3 mb-2">
+
+                                <p class="text-[8px] text-gray-500 dark:text-gray-400 mt-3 mb-2">
                                     Escaneie o QR Code no app do banco ou copie a chave abaixo para aprovação instantânea.
                                 </p>
 
@@ -449,7 +473,10 @@
                                 </div>
 
                             </div>
-<div
+
+
+
+                            <div
                                 id="boletoContent"
                                 class="hidden text-center py-8"
                             >
@@ -474,7 +501,10 @@
                     </div>
 
                 </section>
-<aside>
+
+
+
+                <aside>
 
                     <div class="rounded-xl border border-gray-200 dark:border-[#29292c] bg-white dark:bg-[#111113] p-4 lg:sticky lg:top-4">
 
@@ -489,7 +519,10 @@
                             </span>
 
                         </div>
- <div class="flex gap-3 mb-4">
+
+
+
+                        <div class="flex gap-3 mb-4">
 
                             <div class="w-11 h-11 rounded-md bg-gray-100 dark:bg-[#19191b] border border-gray-200 dark:border-[#29292c] flex items-center justify-center">
 
@@ -518,7 +551,10 @@
                             </div>
 
                         </div>
- <div class="flex gap-2 mb-4">
+
+
+
+                        <div class="flex gap-2 mb-4">
 
                             <input
                                 placeholder="MINIMAL10"
@@ -530,7 +566,9 @@
                             </button>
 
                         </div>
- <div class="border-t border-gray-200 dark:border-[#29292c] pt-4">
+
+
+                        <div class="border-t border-gray-200 dark:border-[#29292c] pt-4">
 
                             <div class="flex justify-between text-[9px] mb-2">
 
@@ -543,7 +581,9 @@
                                 </span>
 
                             </div>
-  <div class="flex justify-between text-[9px] mb-2">
+
+
+                            <div class="flex justify-between text-[9px] mb-2">
 
                                 <span class="text-gray-500 dark:text-gray-400">
                                     Frete Sedex
@@ -554,7 +594,9 @@
                                 </span>
 
                             </div>
-<div
+
+
+                            <div
                                 id="descontoLinha"
                                 class="flex justify-between text-[9px] mb-4"
                             >
@@ -568,7 +610,10 @@
                                 </span>
 
                             </div>
-<div class="border-t border-gray-200 dark:border-[#29292c] pt-4 flex justify-between items-center">
+
+
+
+                            <div class="border-t border-gray-200 dark:border-[#29292c] pt-4 flex justify-between items-center">
 
                                 <span class="text-xs font-bold">
                                     Total
@@ -593,7 +638,10 @@
                                 </div>
 
                             </div>
- <button
+
+
+
+                            <button
                                 id="finalizarButton"
                                 class="w-full h-9 mt-4 rounded-md bg-[#111827] dark:bg-white text-white dark:text-black text-[9px] font-bold flex items-center justify-center gap-2 hover:opacity-90 transition"
                             >
@@ -608,6 +656,8 @@
                                 </span>
 
                             </button>
+
+
 
                             <div class="mt-4 space-y-2">
 
@@ -634,8 +684,10 @@
         </div>
 
     </div>
-<script src="tailwind.config.js"></script>
 
-</body>
 
-</html>
+        <script src="tailwind.config.js"></script>
+
+    </body>
+
+    </html>
