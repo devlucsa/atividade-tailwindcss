@@ -2,4 +2,14 @@
 
 body {font-family: inter;}
 
-.brand-mark[
+.brand-mark{
+  display: grid;
+  height: 22px;
+  width: 22px;
+  place-items: center;
+  border: 2px solid #111827;
+  border-radius: 3px;
+  background: #000000;
+  color: #f1f5f9;
+  font-size: 11px;
+  font-weight: 700;
